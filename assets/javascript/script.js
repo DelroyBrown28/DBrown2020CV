@@ -41,4 +41,24 @@ $(document).ready(function () {
 
     })
 
+    // Click to show music carousel
+
+   $('.music').click(function() {
+       $('.music_carousel').fadeIn();
+   })
+
+
+    // Carousel for music album covers
+
+    $('.music_carousel').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        autoplay: true,
+        autoplayspeed: 300,
+    });
+
+
+
 })

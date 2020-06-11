@@ -12,6 +12,10 @@ html {
     background: #fafafa;
 }
 
+.showMe {
+    display: flex;
+}
+
 
 
 @media only screen and (min-width : 1224px) {
@@ -165,8 +169,6 @@ html {
         display: flex;
         flex-flow: column;
 
-        border: 1px solid black;
-
     }
 
     .education_title,
@@ -214,6 +216,10 @@ html {
     /*-----//  Education Section-----*/
     /*-----Interests Section-----*/
 
+    .interests_box {
+        width: 32%;
+    }
+
     .my_interests {
         width: 100%;
         margin-top: 20px;
@@ -225,7 +231,6 @@ html {
     .interests {
         width: 85px;
         height: 85px;
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -258,9 +263,29 @@ html {
     .interests_view {
         height: 120px;
         width: 100%;
-        margin-top: 40px;
+        margin: 40px auto;
+        display: flex;
 
-        border: 1px solid red;
+
+    }
+
+    .music_carousel {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        display: none;
+
+    }
+
+    .album_cover {
+        height: 120px;
+        margin-right: 10px;
+        cursor: pointer;
+        filter: grayscale(100%);
+        box-shadow:
+            0 14.4px 4.1px -65px rgba(0, 0, 0, 0.19),
+            0 115px 33px -65px rgba(0, 0, 0, 0.095);
+
     }
 
     /*-----//  Interests Section-----*/
@@ -343,4 +368,8 @@ html {
 
 .interests:active {
     box-shadow: none;
+}
+
+.album_cover:hover {
+    filter: grayscale(0%);
 }
