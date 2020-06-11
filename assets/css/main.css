@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+
 body,
 html {
     height: 100%;
@@ -31,10 +33,11 @@ html {
     }
 
 
-    .fa-instagram,
-    .fa-github-alt,
-    .fa-file-pdf {
+    .social_icons {
         font-size: 1.1em;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.1s;
     }
 
     .fa-file-pdf {
@@ -49,9 +52,12 @@ html {
         width: 100%;
         height: 250px;
         display: flex;
+        justify-content: space-around;
+
     }
 
     .name_logo_wrap {
+        position: relative;
         display: flex;
         margin-left: 180px;
     }
@@ -86,17 +92,16 @@ html {
         align-items: center;
         width: 40%;
 
-        border: 1px solid red;
     }
 
     .contact_box {
+        position: relative;
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        border: 1px solid yellow;
     }
 
     .contact_options {
@@ -104,7 +109,7 @@ html {
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        height: 70%;
+        height: 60%;
         width: 70%;
         margin: 0;
         padding: 0;
@@ -120,9 +125,25 @@ html {
     .contact_link {
         margin-left: 40px;
         color: #97C3B1;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+    }
+
+    .contact_plain_text {
+        color: #f1f1f1;
     }
 
 
     /*----------//  Name band section----------*/
 
+}
+
+/*----Hovers & what not----*/
+
+.social_icons:hover {
+    opacity: 1;
+}
+
+.social_icons:active {
+    opacity: 0.5;
 }
