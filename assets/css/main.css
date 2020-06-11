@@ -156,14 +156,16 @@ html {
 
     }
 
-    .top_row_boxes  {
+    .top_row_boxes {
         width: 30%;
         display: flex;
         flex-flow: column;
 
+
     }
 
-    .education_title {
+    .education_title,
+    .interests_title {
         margin: 40px auto 0px;
         font-size: 20px;
         font-weight: 300;
@@ -177,12 +179,11 @@ html {
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
-        margin: 0;
+        margin: 20px 0px 0px;
         padding: 0;
     }
 
     .edu_place {
-        margin: 0;
         display: flex;
         flex-flow: column;
         font-size: 18px;
@@ -191,6 +192,8 @@ html {
         margin: auto;
         text-align: center;
         cursor: pointer;
+        opacity: 0.5;
+        transition: 0.1s;
     }
 
     .edu_light_text {
@@ -198,10 +201,60 @@ html {
         opacity: 0.7;
     }
 
-
-
+    .edu_underline {
+        border: 2px solid #97C3B1;
+        width: 200px;
+    }
 
     /*-----//  Education Section-----*/
+    /*-----Interests Section-----*/
+
+    .my_interests {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .interests {
+        width: 85px;
+        height: 85px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #B5C2BE;
+        transition: 0.1s;
+        cursor: pointer;
+
+    }
+
+    .interests_icons {
+        height: 40px;
+    }
+
+
+    .music_wrap,
+    .coding_wrap,
+    .books_wrap {
+        height: 120px;
+        display: flex;
+        flex-flow: column;
+        font-size: 17px;
+
+    }
+
+    .interests_tag {
+        margin: 0;
+        margin: auto;
+    }
+
+
+
+
+
+    /*-----//  Interests Section-----*/
 
     /*----------//  Main Section----------*/
 
@@ -211,10 +264,22 @@ html {
 
 /*----Hovers & what not----*/
 
-.social_icons:hover {
+.social_icons:hover,
+.edu_place:hover {
     opacity: 1;
 }
 
 .social_icons:active {
     opacity: 0.5;
+}
+
+.interests:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+
 }
