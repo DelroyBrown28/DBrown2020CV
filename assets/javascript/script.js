@@ -1,7 +1,8 @@
 $(document).ready(function () {
 
-    $('.coding').click(function () {
 
+    // bounce function for Coding button
+    $('.coding').click(function () {
         var bounce = new Bounce();
         bounce
             .rotate({
@@ -16,12 +17,12 @@ $(document).ready(function () {
                     y: 1
                 },
                 to: {
-                    x: 1.1,
-                    y: 1.1
+                    x: 2,
+                    y: 2
                 },
-                easing: "hardsway",
+                easing: "sway",
                 duration: 1000,
-                delay: 65,
+                delay: 0,
                 stiffness: 1
             })
             .translate({
@@ -38,26 +39,30 @@ $(document).ready(function () {
                 delay: 30,
             })
             .applyTo(document.querySelectorAll("#github_link"));
-
     })
 
     // Click to show music carousel
+    $('.music').click(function () {
+        $('.music_carousel, .carousel_wrap').toggle();
+        $('.all_books').css('display', 'none');
 
-   $('.music').click(function() {
-       $('.music_carousel').fadeIn();
-   })
+    })
 
+    $('.books').click(function () {
+        $('.music_carousel, .carousel_wrap').css('display', 'none');
+        $('.all_books').toggle()
+    })
 
     // Carousel for music album covers
-
     $('.music_carousel').slick({
-        infinite: false,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         variableWidth: true,
         autoplay: true,
         autoplayspeed: 300,
     });
+
+
 
 
 

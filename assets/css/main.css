@@ -34,7 +34,7 @@ html {
 
     .socials_wrap {
         color: #000;
-        width: 180px;
+        width: 144px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,10 +147,11 @@ html {
     /*----------Main Section----------*/
 
     .main_section {
-        width: 80%;
+        width: 85%;
         height: 70%;
         margin: auto;
         display: flex;
+        background: #fff;
 
     }
 
@@ -168,6 +169,7 @@ html {
         width: 30%;
         display: flex;
         flex-flow: column;
+
 
     }
 
@@ -260,11 +262,12 @@ html {
         margin: auto;
     }
 
-    .interests_view {
+    .carousel_wrap {
         height: 120px;
         width: 100%;
         margin: 40px auto;
         display: flex;
+        display: none;
 
 
     }
@@ -281,12 +284,48 @@ html {
         height: 120px;
         margin-right: 10px;
         cursor: pointer;
-        filter: grayscale(100%);
         box-shadow:
             0 14.4px 4.1px -65px rgba(0, 0, 0, 0.19),
             0 115px 33px -65px rgba(0, 0, 0, 0.095);
 
     }
+
+    .books_view {
+        margin-top: 20px;
+        width: 100%;
+        height: 140px;
+        display: flex;
+
+    }
+
+
+    .aldous {
+        background: url(/assets/images/bookaldoushuxley.jpg);
+    }
+
+    .orwell {
+        background: url(/assets/images/bookgeorgeorwell.jpg);
+    }
+
+    .harris {
+        background: url(/assets/images/booksamharris.jpg);
+    }
+
+    .hawking {
+        background: url(/assets/images/bookstevenhawking.jpg);
+    }
+
+    .all_books {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 25%;
+        height: 100%;
+        display: flex;
+        cursor: pointer;
+        display: none;
+    }
+
 
     /*-----//  Interests Section-----*/
     /*-----Skills and Experience Sectopn-----*/
