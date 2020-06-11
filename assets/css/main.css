@@ -12,7 +12,11 @@ html {
     background: #fafafa;
 }
 
+
+
 @media only screen and (min-width : 1224px) {
+
+
 
     /*----------Top band with socials----------*/
 
@@ -161,6 +165,8 @@ html {
         display: flex;
         flex-flow: column;
 
+        border: 1px solid black;
+
     }
 
     .education_title,
@@ -249,6 +255,14 @@ html {
         margin: auto;
     }
 
+    .interests_view {
+        height: 120px;
+        width: 100%;
+        margin-top: 40px;
+
+        border: 1px solid red;
+    }
+
     /*-----//  Interests Section-----*/
     /*-----Skills and Experience Sectopn-----*/
 
@@ -297,7 +311,7 @@ html {
 
 
 
-    /*-----//  Skills and Experience Sectopn-----*/
+    /*-----//  Skills and Experience Section-----*/
 
     /*----------//  Main Section----------*/
 
@@ -325,4 +339,8 @@ html {
         0 41.8px 33.4px rgba(0, 0, 0, 0.028),
         0 100px 80px rgba(0, 0, 0, 0.02);
 
+}
+
+.interests:active {
+    box-shadow: none;
 }
