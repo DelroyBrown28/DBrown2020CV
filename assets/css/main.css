@@ -173,13 +173,19 @@ html {
 
     }
 
-    .education_title,
+
     .section_title {
         margin: 40px auto 0px;
         font-size: 20px;
         font-weight: 300;
         letter-spacing: 10px;
 
+    }
+
+    .education_title,
+    .interests_title,
+    .skills_title {
+        opacity: 0;
     }
 
     .edu_list {

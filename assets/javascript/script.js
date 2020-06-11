@@ -1,5 +1,22 @@
 $(document).ready(function () {
 
+    // onload fadeIns
+
+    function onLoadFadeIn() {
+        $('.education_title').animate({
+            opacity: '1'
+        }, function () {
+            $('.interests_title').animate({
+                opacity: '1'
+            }, function () {
+                $('.skills_title').animate({
+                    opacity: '1'
+                })
+            })
+        })
+    }
+    window.onload = onLoadFadeIn;
+
 
     // bounce function for Coding button
     $('.coding').click(function () {
