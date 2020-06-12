@@ -76,7 +76,7 @@ $(document).ready(function () {
         slidesToScroll: 4,
         variableWidth: true,
         autoplay: true,
-        autoplayspeed: 300,
+        autoplayspeed: 1000,
     });
 
 
